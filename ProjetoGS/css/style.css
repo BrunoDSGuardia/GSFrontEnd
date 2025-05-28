@@ -287,6 +287,7 @@ main{
     transition: 0.3s;
     width: 60%;
     background-color: #000000;
+    color: #ffffff;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -306,7 +307,7 @@ main{
 
 
 #titulointegrantes{
-    font-size: 30px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     margin-top: 1%;
@@ -316,20 +317,22 @@ main{
     width: 100%;
     padding: 1% 0;
     height: auto;
-    background-color: #4a4a4aa6;
+    background-color: #584c409a;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
+    padding-bottom: 20px;
 
-    border: solid 5px #000000a2;
+    border-top: solid 5px #000000a2;
+    border-bottom: solid 5px #000000a2;
 }
 
 .integrante{
-    border: solid 5px #000000;
+    border: solid 5  #ca9013a2;
     margin-left: 20px;
     width: 27%;
-    background-color: #3f0684;
+    background-color: #141414;
     border-radius: 50px;
     justify-items: center;
     align-content: center;
@@ -338,7 +341,7 @@ main{
 
 .integrantes img{
 
-    border: solid 5px #000000a2;
+    border: solid 5px #ca9013a2;
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -433,7 +436,7 @@ main{
 
 .titulo_faq {
     padding-bottom: 3%;
-    font-size: 4vh;
+    font-size: 1vh;
 }
 
 
@@ -447,14 +450,17 @@ section {
 
 .linkFaq{
 
-    color: #00f7ff;
+    color: #e09d00;
 }
 
 .toggle {
     cursor: pointer;
     font-weight: bold;
     padding: 12px 20px;
-    background: linear-gradient(135deg, #6054fe, rgb(62, 96, 247), #3826fc,rgb(62, 96, 247), #6054fe);
+    background: linear-gradient(135deg, #000000, #222222, #313131,#222222, #000000);
+    border-top: solid 2px #ff9900;
+    border-left: solid 2px #ff9900;
+    border-right: solid 2px #ff9900;
     color: #ffffff;
     border-radius: 8px 8px 0 0;
     text-align: center;
@@ -474,13 +480,16 @@ section {
 }
 
 .toggle:hover {
-    background: linear-gradient(135deg, #3f32f8, rgb(0, 45, 248), #0f00b3,rgb(0, 45, 248), #3f32f8);
+    background: linear-gradient(135deg, #000000, #343434, rgb(74, 74, 74),#343434, #000000);
+    color: #ff9900;
     transition: 0.5s;
     transform: scale(1.05);
 }
 
 .toggle:active {
-    background: linear-gradient(135deg, #5900ff, rgb(99, 0, 248), #6600be,rgb(99, 0, 248), #5900ff);
+    transform: scale(0.1);
+    background: linear-gradient(135deg, #846b4f, #6c553c, #4b3d2d,#6c553c, #846b4f);
+    color: #000000;
     transform: scale(0.99);
 }
 
@@ -491,13 +500,13 @@ section {
     overflow: hidden;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
     padding: 15px;
-    background: #4504869f;
+    background: rgb(43, 43, 43);
     border-bottom: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     width: 30.4%;
-    border-left: solid 2px #000000;
-    border-right: solid 2px #000000;
-    border-bottom: solid 2px #000000;
+    border-left: solid 2px #ff9900;
+    border-right: solid 2px #ff9900;
+    border-bottom: solid 2px #ff9900;
     margin-bottom: 1%;
     display: block;
     border-radius:  0 0 8px 8px;
