@@ -1,0 +1,342 @@
+@media (max-width: 600px) {
+  html, body {
+    min-height: 100vh;
+  }
+
+  #container-geral{
+    width: 100%;
+  }
+
+  header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+  }
+
+  #logo {
+    flex: 0;
+  }
+
+  #titulo {
+    flex: 0.6;
+  }
+
+  #logo img {
+    margin-top: 5px;
+    width: 65px;
+  }
+  #titulo a {
+    font-size: 48px;
+    margin-left: 0;
+  }
+  
+  .menu-toggle {
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  #menuCores {
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0164b5;
+    position: absolute;
+    top: 39vh;
+    right: 0;
+    opacity: 0;
+    transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
+    width: 30vh;
+    height: -1000px;
+    z-index: 3;
+    flex: 0;
+  }
+  
+  #menuCores.active {
+    display: block;
+    height: 8vh;
+    border-radius: 10px;
+    right: 0;
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  .BotaoBody {
+    width: 21px;
+    height: 21px;
+  }
+  
+  #botaoCor{
+    margin-left: 2vh;
+  
+  }
+
+  header button{
+    width: 4vh;
+    height: 4vh;
+    margin-top: 2vh;
+    margin-left: 1.5vh;
+  }
+
+  #menuNav {
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0164b5;
+    position: absolute;
+    min-width: 20%;
+    top: 12vh;
+    right: 0;
+    max-width: 30vh;
+    height: -1000px;
+    opacity: 0;
+    transition: height 0.4s ease-in-out, opacity 0.2s ease-in-out;
+  }
+
+  #menuNav ul {
+    justify-content: center;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    white-space: wrap;
+    max-width: 20%;
+    margin-left: 40%;
+  }
+
+  #menuNav li{
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  #menuNav.active{
+    display: block;
+    right: 0;
+    height: 29vh;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+  }
+
+  #menuNav a {
+    font-size: 20px;
+
+  }
+
+  
+  
+  #inicio {
+    flex-direction: column;
+  }
+
+  
+  #info {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.7) 100%),  url(../img/info.avif);       
+    background-size: cover;
+    transition: .2s;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+  }
+  #info h1 {
+    font-size: 3vw;
+    margin-top: 40vh;
+    margin-left: 6%;
+  }
+  #menu {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+  #tituloMenu h1 {
+    font-size: 6vw;
+  }
+  .botoes {
+    font-size: 3vh;
+    width: 80%;
+    height: auto;
+  }
+  #container-botoes{
+    height: auto;
+    
+  }
+  
+  
+  /*********************************************/
+  /*           PÁGINA DE INTEGRANTES           */
+  /*********************************************/
+  
+  #titulointegrantes {
+    font-size: 24px;
+    margin: 4%;
+  }
+  
+  .integrantes {
+    width: 70%;
+    flex-direction: column;
+    height: auto;
+    padding: 2%;
+  }
+  
+  .integrante {
+    width: 85%;
+    margin: 10px 15px;
+  }
+  
+  .integrantes img {
+    width: 200px;
+    height: 200px;
+  }
+  .integrantes h2 {
+    font-size: 30px;
+  }
+  .integrantes p {
+    font-size: 16px;
+  }
+  
+  #iconLinkedin, #iconGithub {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+  
+  
+  /******************************************/
+  /*           PÁGINA DE CONTATO            */
+  /******************************************/
+  
+  .container-formulario-geral {
+      width: 100%;
+      height: auto;
+      
+  }
+  .tituloContato {
+      font-size: 32px;
+      margin-top: 30px;
+      margin-bottom: 35px;
+      text-align: center;
+  }
+  .container-formulario {
+      display: block;
+      margin-left: auto;
+      width: 95%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container-formulario fieldset {
+        width: 90%;
+        padding: 10px;
+        border-width: 3px;
+    }
+  .container-formulario label {
+      font-size: 18px;
+      padding-left: 5px;
+  }
+  .container-formulario input {
+      width: 90%;
+      font-size: 16px;
+  }
+  .msg-form textarea {
+    margin-left: 15px;
+    width: 92%;
+    height: 120px;
+    margin-top: 30px;
+    padding: 10px 3px;
+  }
+  .button-form {
+      width: 80px;
+      height: 35px;
+      font-size: 16px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+/*************************************/
+/*           PÁGINA DE FAQ           */
+/*************************************/
+
+  #corpo_pagina_faq {
+      flex-direction: column;
+      align-items: center;
+      min-height: auto;
+      
+  }
+  .titulo_faq h1 {
+      font-size: 4vh;
+      text-align: center;
+  }
+  .toggle,
+  .section {
+      width: 80%;
+      margin: 10px auto;
+  }
+  .left,
+  .right {
+      margin: 0 auto;
+  }
+  .toggle {
+    margin-top: 15px;
+      padding: 10px 15px;
+      font-size: 16px;
+  }
+  .section {
+      padding: 10px;
+  }
+
+
+/******************************/
+/*           FOOTER           */
+/******************************/
+
+  footer {
+    margin-top: 10%;
+    z-index: 4;
+  }
+  .rodape-p {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 480px){
+  #titulo a{
+    font-size: 40px;
+  }
+
+  #logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #menuNav {
+    top: 14vh;
+    width: 27vh;
+  }
+
+  #menuCores {
+    top: 41vh;
+    width: 27vh;
+  }
+
+  .BotaoBody{
+    width: 19px;
+    height: 19px;
+  }
+
+  #botaoCor{
+    margin-left: 1.4vh;
+  }
+
+  #menu-toggle {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+  }
+}
