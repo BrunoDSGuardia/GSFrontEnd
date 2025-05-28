@@ -1,7 +1,5 @@
 @media (min-width: 992px) {
 
-
-}
 /****************************************/
 /*           PÁGINA PRINCIPAL           */
 /****************************************/
@@ -58,172 +56,167 @@
 
 
 
-#menu{
-    width: 50%;
-    height: 100VH;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+    #menu{
+        width: 100%;
 
-
-#tituloMenu {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 100%;
-    margin-top: 10%;
-}
-
-#info h1 {
-    font-size: 2.4vw;
-}
-
-#tituloMenu h1{
-    font-size: 4vw;
-
-}
-
-#container-botoes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 10%;
-    height: 52%;
-    justify-content: space-evenly;
-}
-
-.BotaoBody {
-    min-width: 30px;
-    height: 30px;
-}
-
-#menuCores {
-    gap: 3px;
-}
-
-#botaoCor {
-    margin-left: 0;
-}
-
-.botoes:hover{
-    transition: 0.3s;
-    background-color: #051a94 ;
-    color: #42ff5b;
-    scale: 1.2;
-
-
-}
-
-.botoes:active{
-    transition: 0.3s;
-    background-color: #0026ff ;
-    color: #66ef78;
-    scale: 0.95;
-}
-
-.botoes{
-    margin-top: 2%;
-    transition: 0.3s;
-    width: 60%;
-    border-radius: 15px;
-    background-color: #1F3BDB ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 2px solid black;
-    color: white;
-    margin: 1%;
-    padding: 1%;
-    text-decoration: none;
-    font-size: 4VH;
-}
-
-/*********************************************/
-/*           PÁGINA DE INTEGRANTES           */
-/*********************************************/
-
-
-.integrantes {
-    width: 80%;
-    flex-direction: row;
-}
-
-.integrante {
-    width: 400px;
-    height: 400px;
-    img {
-        width: 200px;
-        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
-    h2 {
-        font-size: 30px;
+
+
+    #tituloMenu {
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 100%;
+        margin-top: 10%;
     }
-    p {
-        font-size: 20px;
+
+    #info h1 {
+        font-size: 2.4vw;
     }
-    #iconGithub, #iconLinkedin {
-        width: 50px;
-        height: 50px;
+
+    #tituloMenu h1{
+        font-size: 4vw;
+
     }
-}
 
-/*******************************/
-/*      Página do Projeto      */
-/*******************************/
+    #container-botoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10%;
+        height: 52%;
+        justify-content: space-evenly;
+    }
 
-#container-projeto fieldset {
-    display: flex;
-    flex-direction: row;     
-    flex-wrap: wrap;         
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    background-color: #35375181;
-    border: 4px solid rgba(0, 17, 255, 0.817);
-    padding: 2%;
-    width: 65%;
-    border-radius: 20px;
-}
+    .BotaoBody {
+        min-width: 30px;
+        height: 30px;
+    }
 
-#container-projeto input {
-    width: 70%;
-}
+    #menuCores {
+        gap: 3px;
+    }
 
-#container-projeto fieldset > div {
-    flex: 1 1 300px;
-}
+    #botaoCor {
+        margin-left: 0;
+    }
 
-#container-projeto input[type="radio"] {
-    width: auto;
-}
+    .botoes:hover{
+        transition: 0.3s;
 
-.genRadio {
-    margin: 3% 5px;
-}
+        scale: 1.2;
 
-/******************************/
-/*           FOOTER           */
-/******************************/
 
-footer {
-    margin-top: 6%;    
-}
+    }
 
-#footer-format {
-    margin-top: auto;
-}
-.rodape{
-    margin-top: 2px;
-    margin-bottom: 3px;
-    text-align: center;
-}
+    .botoes:active{
+        transition: 0.3s;
 
-.rodape-p {
-    font-size: 1.8vw;
+        scale: 0.95;
+    }
+
+    .botoes{
+        margin-top: 2%;
+        transition: 0.3s;
+        width: 60%;
+        border-radius: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 1%;
+        padding: 1%;
+        text-decoration: none;
+        font-size: 4VH;
+    }
+
+    /*********************************************/
+    /*           PÁGINA DE INTEGRANTES           */
+    /*********************************************/
+
+    .integrantes {
+        width: 80%;
+        flex-direction: row;
+    }
+
+    .integrante {
+        width: 400px;
+        height: 400px;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        #iconGithub, #iconLinkedin {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    /*******************************/
+    /*      Página do Projeto      */
+    /*******************************/
+
+    #container-projeto fieldset {
+        display: flex;
+        flex-direction: row;     
+        flex-wrap: wrap;         
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        background-color: #35375181;
+        border: 4px solid rgba(0, 17, 255, 0.817);
+        padding: 2%;
+        width: 65%;
+        border-radius: 20px;
+    }
+
+    #container-projeto input {
+        width: 70%;
+    }
+
+    #container-projeto fieldset > div {
+        flex: 1 1 300px;
+    }
+
+    #container-projeto input[type="radio"] {
+        width: auto;
+    }
+
+    .genRadio {
+        margin: 3% 5px;
+    }
+
+    /******************************/
+    /*           FOOTER           */
+    /******************************/
+
+    footer {
+        margin-top: 6%;    
+    }
+
+    #footer-format {
+        margin-top: auto;
+    }
+    .rodape{
+        margin-top: 2px;
+        margin-bottom: 3px;
+        text-align: center;
+    }
+
+    .rodape-p {
+        font-size: 1.8vw;
+    }
 }

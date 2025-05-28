@@ -164,6 +164,7 @@ main{
     width: 100%;
     max-width: 100%;
     background-color: #000000;
+    border-radius: 0 0 20px 20px;
     
 }
 
@@ -210,53 +211,15 @@ main{
     float: none;
 }
 
-#info {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .7) 100%),  url(../img/info.avif);       
-    background-size: cover;
-    width: 50%;
-    height: 100%;
-    filter: drop-shadow(2px 20px 15px #333f46);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    transition: .3s ease;
-    h1{
-        font-size: 3vw;
-        width: 85%;
-        color: #f0f0f0;
-        margin-top: 60vh;
-        margin-left: 8%;
-        transition: .2s;
-    }
-}
-#info:hover {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1.7) 100%),  url(../img/info.avif);       
-    background-size: cover;
-    height: 100%;
-    transition: .2s;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    box-sizing: border-box;
-    h1{
-        font-size: 3vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: #f0f0f0;
-        margin-top: 50vh;
-        scale: 1.2;
-    }
-}
-
 
 
 #menu{
-    
-    width: 50%;
-    height: 100VH;
+    width: 80%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.4)), url(../img/FundoApp.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     
     flex-direction: column;
@@ -264,20 +227,33 @@ main{
 
 
 #tituloMenu {
+
     width: 100%;
-    height: 100px;
+    height: auto;
     display: flex;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 100%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
-#tituloMenu h1{
+#tituloMenu h1 {
+    color: #000000;
+    margin-top: 50px;
     font-size: 4vw;
-
+    margin-bottom: 30px;
 }
+
+#tituloMenu p {
+    font-size: 2vw;
+    width: 60%;
+}
+#menuInfo {
+    margin-top: 20px;
+}
+
 
 #container-botoes{
     display: flex;
@@ -292,8 +268,8 @@ main{
 
 .botoes:hover{
     transition: 0.3s;
-    background-color: #051a94 ;
-    color: #42ff5b;
+    background-color: #0e0027 ;
+    color: #cf8300;
     scale: 1.2;
 
 
@@ -301,8 +277,8 @@ main{
 
 .botoes:active{
     transition: 0.3s;
-    background-color: #0026ff ;
-    color: #66ef78;
+    background-color: #383838 ;
+    color: #ffb637;
     scale: 0.95;
 }
 
@@ -310,15 +286,13 @@ main{
     margin-top: 2%;
     transition: 0.3s;
     width: 60%;
-
+    background-color: #000000;
     border-radius: 15px;
-    background-color: #1F3BDB ;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 2px solid black;
-    color: white;
+    border: 3px solid #d1b8a0;
     margin: 1%;
     padding: 1%;
     text-decoration: none;
@@ -336,20 +310,18 @@ main{
     display: flex;
     justify-content: center;
     margin-top: 1%;
-
 }
 
 .integrantes{
-    margin: 2% auto;
+    width: 100%;
     padding: 1% 0;
-    width: 80%;
-    height: 550px;
-    background-color: #ffffff20;
+    height: auto;
+    background-color: #4a4a4aa6;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    border-radius: 50px;
+
     border: solid 5px #000000a2;
 }
 
@@ -783,11 +755,11 @@ placeholder{
 footer {
 
     display: flex;
-    background-color: #0076b5;
-    color: rgb(53, 157, 249);
+    background-color: #815100;
+    color: #815100;
     height: 23px;
     width: 100%;
-    color: #000000;
+    color: #ffffff;
     margin-top: auto;
     position: relative;
     justify-content: center;
