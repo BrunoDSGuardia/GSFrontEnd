@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     if (botaoPreto) {
         botaoPreto.addEventListener("click", function() {
-            let novaCorBody = "rgb(31, 29, 29)"; 
+            let novaCorBody = "rgb(101, 141, 146)";
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody); 
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     if (botaoCinza) {
         botaoCinza.addEventListener("click", function() {
-            let novaCorBody = "rgb(51, 52, 62)"; 
+            let novaCorBody ="rgb(36, 66, 45)"; ;
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
@@ -50,14 +50,14 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (botaoCinzaClaro) {
         botaoCinzaClaro.addEventListener("click", function() {
-            let novaCorBody = "rgb(81, 81, 81)"; 
+            let novaCorBody ="rgb(114, 90, 69)" ;
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
     }
     if (botaoAzul) {
         botaoAzul.addEventListener("click", function() {
-            let novaCorBody = "rgb(6, 9, 44)"; 
+            let novaCorBody = "rgb(69, 51, 35)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });
@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (botaoAzulClaro) {
         botaoAzulClaro.addEventListener("click", function() {
-            let novaCorBody = "rgb(27, 89, 140)";  
+            let novaCorBody = "rgb(31, 29, 29)";  
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
         });

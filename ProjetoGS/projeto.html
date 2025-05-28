@@ -12,83 +12,81 @@
     <title> Projeto </title>
 </head>
 <body>
-    <header>
-        <div id="logo">
-            <a href="index.html">
-                <img src="img/RotaSeguraLogo.png" alt="Logo do Rota Segura">
-            </a>
-        </div>
-        <h1 id="titulo"><a href="index.html">Guia HC</a></h1>
-        <div class="menu-toggle" id="menu-toggle">
-            ☰
-        </div>
-        <div id="menuCores">
-                <button tabindex="14" id="botaoCor" class="BotaoBody"></button>
-                <button tabindex="15"id="botaoCor2" class="BotaoBody"></button>
-                <button tabindex="16"id="botaoCor3" class="BotaoBody"></button>
-                <button tabindex="17"id="botaoCor4" class="BotaoBody"></button>
-                <button tabindex="18"id="botaoCor5" class="BotaoBody"></button>
-        </div>
-    </header>
-    <nav id="menuNav">
-        <ul>
-            <li tabindex="9"><a href="index.html">MENU</a></li>
-            <li tabindex="10"><a href="integrantes.html">INTEGRANTES</a></li>
-            <li tabindex="11"><a href="#">PROJETO</a></li>
-            <li tabindex="12"><a href="faq.html">FAQ</a></li>
-            <li tabindex="13"><a href="contato.html">CONTATO</a></li>
-        </ul>    
-    </nav> 
-    <main>
-        <div id="container-projeto">
-            <form action="/" id="formularioProjeto" method="GET">
-                <fieldset aria-labelledby="form-titulo-projeto">
-                    <legend>Cadastro</legend>
-                    <div id="nome-form-projeto" class="formrow">
-                        <label for="nome-projeto">Nome Completo:</label><br>
-                        <input type="text" id="nome-projeto" name="nome" placeholder="Digite seu nome" autocomplete="given-name" tabindex="1">
-                    </div>
+    <div id="container-geral">       
+        <header>
+            <div id="logo">
+                <a href="#">
+                    <img src="img/RotaSeguraLogo.png" alt="Logo do Rota Segura">
+                </a>
+            </div>
+            
+            <h1 id="titulo"><a href="#">Rota Segura</a></h1>
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <div id="menuCores" class="menuCores">
+                <button tabindex="14"  id="botaoCor" class="BotaoBody"></button>
+                <button tabindex="15" id="botaoCor2" class="BotaoBody"></button>
+                <button tabindex="16" id="botaoCor3" class="BotaoBody"></button>
+                <button tabindex="17" id="botaoCor4" class="BotaoBody"></button>
+                <button tabindex="18" id="botaoCor5" class="BotaoBody"></button>
+            </div>
+        </header>
+                <nav id="menuNav">
+            <ul>
+                <li tabindex="9"><a href="index.html">MENU</a></li>
+                <li tabindex="10"><a href="integrantes.html">INTEGRANTES</a></li>
+                <li tabindex="11"><a href="#">PROJETO</a></li>
+                <li tabindex="12"><a href="faq.html">FAQ</a></li>
+                <li tabindex="13"><a href="contato.html">CONTATO</a></li>
+            </ul>    
+        </nav>
+        <main>
+            <div id="container-projeto">
+                <form action="/" id="formularioProjeto" method="GET">
+                    <fieldset aria-labelledby="form-titulo-projeto">
+                        <legend>Cadastro</legend>
+                        <div id="nome-form-projeto" class="formrow">
+                            <label for="nome-projeto">Nome Completo:</label><br>
+                            <input type="text" id="nome-projeto" name="nome" placeholder="Digite seu nome" autocomplete="given-name" tabindex="1">
+                        </div>
 
-                    <div id="email-form-projeto" class="formrow">
-                        <label for="email-projeto">Email:</label><br>
-                        <input type="email" id="email-projeto" name="email" placeholder="Digite seu Email" autocomplete="email" tabindex="2">
-                    </div>
-                    <div id="email-form-projeto" class="formrow">
-                        <label for="email-confirmacao-projeto">Confirme seu Email:</label><br>
-                        <input type="email" id="email-confirmacao-projeto" name="emailConfirmacao" placeholder="Confirme seu Email" autocomplete="email" tabindex="3">
-                    </div>
-                    <div id="telefone-form-projeto" class="formrow">
-                        <label for="telefone-projeto">Telefone:</label><br>
-                        <input type="tel" id="telefone-projeto" name="telefone" placeholder="(12) 12345-6789" tabindex="4">
-                    </div>
-                    
-                    <div id="sexo-form-projeto" class="formrow">
-                        <label for="sexo">Escolha o seu Gênero:</label><br>
-                        <input type="radio" class="genRadio" name="escolhasexo" tabindex="5">Masculino
-                        <input type="radio" class="genRadio" name="escolhasexo" >Feminino
-                        <input type="radio" class="genRadio" name="escolhasexo" >Outros
-                    </div>
-                    
-                    <div id="senha-form-projeto" class="formrow">
-                        <label for="senha-projeto">Senha:</label><br>
-                        <input type="password" id="senha-projeto" name="senha" placeholder="Digite sua senha" autocomplete="off" tabindex="6">
-                    </div>
-                    
-                    <div id="senha-confirmacao-form-projeto" class="formrow">
-                        <label for="senha-confirmacao-projeto">Confirme a Senha:</label><br>
-                        <input type="password" id="senha-confirmacao-projeto" name="senhaConfirmacao" placeholder="Confirme sua senha" autocomplete="off" tabindex="7">
-                    </div>
+                        <div id="email-form-projeto" class="formrow">
+                            <label for="email-projeto">Email:</label><br>
+                            <input type="email" id="email-projeto" name="email" placeholder="Digite seu Email" autocomplete="email" tabindex="2">
+                        </div>
+                        <div id="email-form-projeto" class="formrow">
+                            <label for="email-confirmacao-projeto">Confirme seu Email:</label><br>
+                            <input type="email" id="email-confirmacao-projeto" name="emailConfirmacao" placeholder="Confirme seu Email" autocomplete="email" tabindex="3">
+                        </div>
+                        <div id="telefone-form-projeto" class="formrow">
+                            <label for="telefone-projeto">Telefone:</label><br>
+                            <input type="tel" id="telefone-projeto" name="telefone" placeholder="(12) 12345-6789" tabindex="4">
+                        </div>
+                        
+                        <div id="sexo-form-projeto" class="formrow">
+                            <label for="sexo">Escolha o seu Gênero:</label><br>
+                            <input type="radio" class="genRadio" name="escolhasexo" tabindex="5">Masculino
+                            <input type="radio" class="genRadio" name="escolhasexo" >Feminino
+                            <input type="radio" class="genRadio" name="escolhasexo" >Outros
+                        </div>
+                        
+                        <div id="senha-form-projeto" class="formrow">
+                            <label for="senha-projeto">Senha:</label><br>
+                            <input type="password" id="senha-projeto" name="senha" placeholder="Digite sua senha" autocomplete="off" tabindex="6">
+                        </div>
+                        
+                        <div id="senha-confirmacao-form-projeto" class="formrow">
+                            <label for="senha-confirmacao-projeto">Confirme a Senha:</label><br>
+                            <input type="password" id="senha-confirmacao-projeto" name="senhaConfirmacao" placeholder="Confirme sua senha" autocomplete="off" tabindex="7">
+                        </div>
 
-                    <button class="button-projeto" type="submit" aria-label="Enviar mensagem de contato" tabindex="8">Enviar</button>
-                </fieldset>
-            </form>
-        </div>
-        
-        
-
-        
-    </main>
-
+                        <button class="button-projeto" type="submit" aria-label="Enviar mensagem de contato" tabindex="8">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </div>
     <footer id="footer-projeto">
         <div class="rodape">
             <p class="rodape-p">Todos os direitos reservados®</p>

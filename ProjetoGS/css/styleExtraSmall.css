@@ -43,7 +43,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0164b5;
+    background-color: #547ea1;
     position: absolute;
     top: 39vh;
     right: 0;
@@ -86,7 +86,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0164b5;
     position: absolute;
     min-width: 20%;
     top: 12vh;
