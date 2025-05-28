@@ -39,7 +39,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap; 
-    background-color: #0164b5;
+    background-color: #515151;
     height: 85px;
     width: 100%;
     min-height: 85px;
@@ -68,7 +68,7 @@ header{
     float: left;
     text-decoration: none;
     font-size: 70px;
-    color: #fff;
+    color: #000000;
     transition: 0.8s;
     flex: 1;
     flex-grow: 1;
@@ -103,7 +103,7 @@ header button{
     width: 5vh;
     height: 5vh;
     border-radius: 5px;
-    border: solid 2px #998013;
+    border: solid 2px #a49242;
     font-size: 20px;
 }
 
@@ -158,7 +158,7 @@ main{
 
 #menuNav{
     display: flex;
-    background-color: #007694;
+    background-color: #0f0f0f;
     justify-content:center;
     height: 30px;
     width: 100%;

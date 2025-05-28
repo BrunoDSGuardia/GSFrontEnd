@@ -1,22 +1,23 @@
 @media (min-width: 768px){
-#logo img {
-  width: 75px;
-  transition: 0.8s;
-}
-#titulo {
-  flex: 1;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}  
-
-#titulo a {
-    font-size: 60px;
-    text-decoration: none;
-    font-size: 70px;
-    color: #fff;
+  #logo img {
+    width: 75px;
     transition: 0.8s;
   }
+  #titulo {
+    flex: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }  
+
+  #titulo a {
+      font-size: 60px;
+      text-decoration: none;
+      font-size: 70px;
+      color: #000000;
+      transition: 0.8s;
+  }
+  
   #tituloMenu h1 {
       font-size: 5vw;
     }
