@@ -39,7 +39,7 @@ header{
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap; 
-    background-color: #815100;
+    background-color: #dcbb00f5;
     height: 85px;
     width: 100%;
     min-height: 85px;
@@ -454,28 +454,27 @@ section {
 }
 
 .toggle {
+    width: 50%;
     cursor: pointer;
     font-weight: bold;
     padding: 12px 20px;
     background: linear-gradient(135deg, #000000, #222222, #313131,#222222, #000000);
-    border-top: solid 2px #ff9900;
-    border-left: solid 2px #ff9900;
-    border-right: solid 2px #ff9900;
+    border: solid 2px #ff9900;
     color: #ffffff;
     border-radius: 8px 8px 0 0;
     text-align: center;
     transition:0.5s;
-    width: 30%;
+    width: 60%;
     display: block;
 }
 
 .left{
-    margin-left: 50vh;
+    margin-left: 60vh;
     margin-right: auto;
 }
 
 .right{
-    margin-left: 80vh;
+    margin-left: 30vh;
     margin-right: auto;
 }
 
@@ -504,9 +503,9 @@ section {
     border-bottom: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     width: 30.4%;
-    border-left: solid 2px #ff9900;
-    border-right: solid 2px #ff9900;
-    border-bottom: solid 2px #ff9900;
+    border-left: solid 2px #a54800;
+    border-right: solid 2px #a54800;
+    border-bottom: solid 2px #a54800;
     margin-bottom: 1%;
     display: block;
     border-radius:  0 0 8px 8px;
@@ -764,8 +763,8 @@ placeholder{
 footer {
 
     display: flex;
-    background-color: #815100;
-    color: #815100;
+    background-color: #dcbb00f5;
+    color: #dcbb00f5;
     height: 23px;
     width: 100%;
     color: #ffffff;

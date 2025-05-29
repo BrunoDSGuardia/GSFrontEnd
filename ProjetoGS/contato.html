@@ -61,12 +61,26 @@
                                 <br>
                                 <input type="email" id="email" name="email" placeholder="Digite seu Email" autocomplete="email" tabindex="2">
                             </div>
-
-                            <div class="assunto-form form">
-                                <label for="assunto">Assunto:</label>
+                            
+                            <div class="estado-form form">
+                                <label for="tipo">Assunto:</label>
                                 <br>
-                                <input type="text" id="assunto" name="assunto" placeholder="Qual o assunto?" autocomplete="off" d tabindex="3">
+                                <select id="estado" name="estado" tabindex="3" required>
+                                    <option value="" disabled selected>Selecione o tema da conversa</option>
+
+                                    <option value="AL">Duvidas</option>
+                                    <option value="AP">Reclamações</option>
+                                    <option value="AM">Sugestões</option>
+                                    <option value="BA">Outro</option>
+                                </select>
                             </div>
+                            <div class="assunto-form form">
+                                <label for="assunto">Titulo:</label>
+                                <br>
+                                <input type="text" id="assunto" name="assunto" placeholder="Qual o Titulo do assunto?" autocomplete="off" d tabindex="3">
+                            </div>
+
+
 
                             <div class="msg-form">
                                 <label for="mensagem">Mensagem:</label>

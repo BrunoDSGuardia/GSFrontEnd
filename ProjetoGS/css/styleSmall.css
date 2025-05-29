@@ -160,7 +160,8 @@
   }
   
   .integrantes {
-    width: 100;
+    width: 10;
+
     flex-direction: column;
     height: auto;
     padding: 2%;
@@ -253,23 +254,21 @@
         font-size: 4vh;
         text-align: center;
     }
-    .toggle,
+
     .section {
-        width: 80%;
-        margin: 10px auto;
+        width: 50%;
+        margin-left: px auto;
+        padding: 15px;
     }
-    .left,
-    .right {
-        margin: 0 auto;
-    }
+    
+
     .toggle {
+      width: 50%;
       margin-top: 15px;
-        padding: 10px 15px;
-        font-size: 16px;
+      padding: 10px 15px;
+      font-size: 16px;
     }
-    .section {
-        padding: 10px;
-    }
+
 
     /******************************/
     /*           FOOTER           */
