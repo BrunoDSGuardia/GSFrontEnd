@@ -74,15 +74,27 @@ document.addEventListener("DOMContentLoaded", function() {
 document.querySelectorAll(".toggle").forEach((summary) => {
     summary.addEventListener("click", function () {
         const section = this.nextElementSibling;
-        
         if (!section) return;
 
-        if (section.style.maxHeight) {
-            section.style.maxHeight = null;
+        section.style.transition = "max-height 0.75s cubic-bezier(0.4,0,0.2,1), opacity 0.2s cubic-bezier(0.4,0,0.2,1), box-shadow 0.2s, transform 0.4s";
+        section.style.overflow = "hidden";
+        if (section.style.maxHeight && section.style.maxHeight !== "0px") {
+            section.style.maxHeight = "0px";
             section.style.opacity = "0";
+            section.style.transform = "scale(0.98)";
+            section.style.boxShadow = "none";
         } else {
             section.style.maxHeight = section.scrollHeight + "px";
             section.style.opacity = "1";
+            section.style.boxShadow = "0 8px 32px rgba(101,141,146,0.18)";
+            section.style.transform = "scale(1)";
         }
     });
+    const section = summary.nextElementSibling;
+    if (section) {
+        section.style.maxHeight = "0px";
+        section.style.opacity = "0";
+        section.style.overflow = "hidden";
+        section.style.transform = "scale(0.98)";
+    }
 });
