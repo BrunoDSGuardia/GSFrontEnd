@@ -4,8 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const assunto = document.getElementById("assunto");
     const mensagem = document.getElementById("mensagem");
     const formulario = document.getElementById("formulario");
+    const select = document.getElementById("tipo"); 
 
-
+    
+    
     formulario.addEventListener('submit', (e) => {
         let mensagem = [];
         
@@ -18,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         if (email.value === "" || email.value === null) {
             mensagem.push("Insira seu email");
+        }
+        if (select.value === "" || select.value === null) {
+            mensagem.push("Selecione um assunto");
         }
         if (assunto.value === "" || assunto.value === null) {
             mensagem.push("Insira o assunto da mensagem");
