@@ -2,7 +2,7 @@ const Nome = localStorage.getItem("NomeUsuario");
 console.log("NomeUsuario:", Nome);
 
 if (Nome) {
-    document.getElementById("nomeUsuario").textContent = `Nome: ${Nome}`;
+    document.getElementById("nomeUsuario").textContent = `${Nome}`;
 } else {
     document.getElementById("nomeUsuario").textContent = "Usuário";
 }
