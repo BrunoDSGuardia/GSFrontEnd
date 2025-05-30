@@ -36,14 +36,76 @@
             <ul>
                 <li tabindex="9"><a href="index.html">MENU</a></li>
                 <li tabindex="10"><a href="integrantes.html">INTEGRANTES</a></li>
-                <li tabindex="11"><a href="#">PROJETO</a></li>
+                <li tabindex="11"><a href="projeto.html">PROJETO</a></li>
                 <li tabindex="12"><a href="faq.html">FAQ</a></li>
                 <li tabindex="13"><a href="contato.html">CONTATO</a></li>
             </ul>    
         </nav>
         <main>
-            <p id="nomeUsuario"></p>
-
+            <div class="usertext">
+                <p id="nomeUsuario"></p>
+            </div>
+            <p class="localizacaoText">Bem Vindo! Informe seus dados para receber o mapeamento do Rota Segura na Região selecionada</p>
+                <div id="container-projeto">
+                            
+                
+                <form action="/" id="formularioProjeto" method="GET">
+                    <fieldset aria-labelledby="form-titulo-projeto">
+                        <legend>Cadastro</legend>
+                        <div id="estado-form-projeto" class="formrow">
+                            <label for="estado-select">Estado:</label><br>
+                            <select id="estado-select" name="estado" tabindex="1" required>
+                                <option value="" disabled selected>Selecione seu Estado</option>
+                                <option value="AC">Acre (AC)</option>
+                                <option value="AL">Alagoas (AL)</option>
+                                <option value="AP">Amapá (AP)</option>
+                                <option value="AM">Amazonas (AM)</option>
+                                <option value="BA">Bahia (BA)</option>
+                                <option value="CE">Ceará (CE)</option>
+                                <option value="DF">Distrito Federal (DF)</option>
+                                <option value="ES">Espírito Santo (ES)</option>
+                                <option value="GO">Goiás (GO)</option>
+                                <option value="MA">Maranhão (MA)</option>
+                                <option value="MT">Mato Grosso (MT)</option>
+                                <option value="MS">Mato Grosso do Sul (MS)</option>
+                                <option value="MG">Minas Gerais (MG)</option>
+                                <option value="PA">Pará (PA)</option>
+                                <option value="PB">Paraíba (PB)</option>
+                                <option value="PR">Paraná (PR)</option>
+                                <option value="PE">Pernambuco (PE)</option>
+                                <option value="PI">Piauí (PI)</option>
+                                <option value="RJ">Rio de Janeiro (RJ)</option>
+                                <option value="RN">Rio Grande do Norte (RN)</option>
+                                <option value="RS">Rio Grande do Sul (RS)</option>
+                                <option value="RO">Rondônia (RO)</option>
+                                <option value="RR">Roraima (RR)</option>
+                                <option value="SC">Santa Catarina (SC)</option>
+                                <option value="SP">São Paulo (SP)</option>
+                                <option value="SE">Sergipe (SE)</option>
+                                <option value="TO">Tocantins (TO)</option>
+                            </select>
+                        </div>
+                        <div id="cidade-form-projeto" class="formrow">
+                                <label for="cidade-confirmacao-projeto">Cidade:</label><br>
+                                <input type="text" id="cidade-confirmacao-projeto" name="cidadeConfirmacao" placeholder="Digite sua Cidade" autocomplete="address" tabindex="3">
+                            </div>
+                        <div id="cep-form-projeto" class="formrow">
+                            <label for="cep-projeto">CEP:</label><br>
+                            <input type="text" id="cep-projeto" name="cep" placeholder="Digite seu CEP" autocomplete="postal-code" tabindex="3">
+                        </div>
+                        <div id="endereco-form-projeto" class="formrow">
+                            <label for="endereco-projeto">Endereço:</label><br>
+                            <input type="text" id="endereco-projeto" name="endereco" placeholder="Digite seu endereço" tabindex="4">
+                        </div>
+                        <div id="complemento-form-projeto" class="formrow">
+                            <label for="complemento-projeto">Complemento:</label><br>
+                            <input type="text" id="complemento-projeto" name="complemento" placeholder=" (opcional)" tabindex="5">
+                        </div>
+                        
+                        <button class="button-projeto" type="submit" aria-label="Enviar mensagem de contato" tabindex="8">Enviar</button>
+                    </fieldset>
+                </form>
+            </div>
 
         </main>
     </div>

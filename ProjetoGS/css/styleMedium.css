@@ -17,10 +17,13 @@
       color: #000000;
       transition: 0.8s;
   }
-  
-  #tituloGeral h1 {
-      font-size: 5vw;
-    }
+  .titulo_faq {
+    font-size: 5vw;
+    padding-bottom: 3%;
+    text-shadow: 0 2px 8px #00000088;
+  }
+
+
   .botoes {
     font-size: 4vh;
   }

@@ -241,6 +241,7 @@ main{
 
 #tituloGeral h1 {
     color: #000000;
+    text-shadow: 0 2px 8px #c35e0088;
     margin-top: 50px;
     font-size: 4vw;
     margin-bottom: 30px;
@@ -309,6 +310,7 @@ main{
 #titulointegrantes{
     font-size: 50px;
     display: flex;
+    text-shadow: 0 2px 8px #350075;
     justify-content: center;
     margin-top: 1%;
 }
@@ -437,7 +439,9 @@ main{
 }
 
 .titulo_faq {
+    
     padding-bottom: 3%;
+    text-shadow: 0 2px 8px #00000088;
 }
 
 
@@ -536,7 +540,7 @@ section {
 }
 
 input:focus{
-    border: 2px solid #ffd500;
+    border: 2px solid #5c4d00;
     outline: none;
     box-shadow: 0 0 0 4px #8200add3;
     transition: border-color 0.3s, box-shadow 0.3s;
@@ -546,8 +550,7 @@ input:focus{
     font-size: 50px;
     margin-top: 1%;
     margin-bottom: 1%;
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 0, 0);
+    text-shadow: 0 2px 8px #5c4d00;
 }
 
 .container-formulario{
@@ -608,7 +611,7 @@ select{
 
 .container-formulario fieldset:hover {
     border-color: #331f00;
-    box-shadow: 0 8px 32px 0 rgba(70, 53, 0, 0.87), 0 2px 6px 0 rgba(0,0,0,0.14);
+    box-shadow: 0 8px 32px  rgba(97, 73, 0, 0.87), 0 2px 6px 0 rgba(0,0,0,0.14);
 }
 
 .msg-form {
@@ -794,10 +797,6 @@ select:disabled {
     backdrop-filter: blur(2px);
 }
 
-.formulario-projeto-fieldset:hover {
-    border-color: #1e293b;
-    box-shadow: 0 8px 32px 0 rgba(37, 99, 235, 0.32), 0 2px 6px 0 rgba(0,0,0,0.14);
-}
 
 #formularioProjeto label {
     padding-left: 15px;
@@ -866,7 +865,7 @@ select:disabled {
     background-color: #707070;
     color: #ffffff;
     border-radius: 5px;
-    border: solid 2px #1e293b;
+    border: solid 2px #000000;
     font-size: 20px;
     display: block;
     margin-left: auto;
@@ -887,6 +886,34 @@ select:disabled {
     transition: 0.2s;
     cursor: pointer;
 }
+/**********************************/
+/*      Página da localizacao     */
+/**********************************/
+
+.usertext{
+    margin-top: 1%;
+    font-size: 30px;
+    text-align: center;
+    border: solid 3px #000000;
+    border-radius: 5px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.localizacaoText{
+    width: 60%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1%;
+
+    color: #ffffff;
+}
+
+
+
 
 /******************************/
 /*           FOOTER           */

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 formularioProjeto.addEventListener("submit", (a) => {
     let mensagemProjeto = [];
-    let NomeUsuario = ""; // Declarando a variável antes
+    let NomeUsuario = ""; 
 
     if (nomeProjeto.value === "" || nomeProjeto.value === null) {
         mensagemProjeto.push("Insira seu nome");
@@ -24,7 +24,7 @@ formularioProjeto.addEventListener("submit", (a) => {
     if (partesNomeProjeto.length < 2) {
         mensagemProjeto.push("Adicione um sobrenome");
     } else {
-        NomeUsuario = partesNomeProjeto[0]; // Agora a variável está acessível
+        NomeUsuario = partesNomeProjeto[0]; 
     }
 
     if (emailProjeto.value.trim() === "") {
