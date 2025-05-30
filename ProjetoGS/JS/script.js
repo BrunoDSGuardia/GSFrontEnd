@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     if (botaoPreto) {
         botaoPreto.addEventListener("click", function() {
-            let novaCorBody = "rgb(101, 141, 146)";
+            let novaCorBody = "a baixo";
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody); 
 

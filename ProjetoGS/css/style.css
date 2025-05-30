@@ -226,7 +226,7 @@ main{
 }
 
 
-#tituloMenu {
+#tituloGeral {
 
     width: 100%;
     height: auto;
@@ -239,14 +239,14 @@ main{
     margin-top: 5%;
 }
 
-#tituloMenu h1 {
+#tituloGeral h1 {
     color: #000000;
     margin-top: 50px;
     font-size: 4vw;
     margin-bottom: 30px;
 }
 
-#tituloMenu p {
+#tituloGeral p {
     font-size: 2vw;
     width: 60%;
 }
@@ -386,7 +386,8 @@ main{
     float: left;
     width: 60px;
     height: 60px;
-    margin: 10px;
+    
+    margin-left: 60px;
     background-color: #abe3ff;
     filter: brightness(1.2);
     transition: 0.3s;
@@ -417,6 +418,7 @@ main{
     filter: brightness(0.8);
     scale: 1.2;
     transition: 0.3s;
+    
 }
 
 
@@ -436,7 +438,6 @@ main{
 
 .titulo_faq {
     padding-bottom: 3%;
-    font-size: 1vh;
 }
 
 
@@ -454,6 +455,7 @@ section {
 }
 
 .toggle {
+    
     width: 50%;
     cursor: pointer;
     font-weight: bold;
@@ -512,7 +514,7 @@ section {
 }
 
 #corpo_pagina_faq{
-    font-size: 3vh;
+    font-size: 4vh;
     color: #ffffff;
     margin-bottom: 1%;
 
@@ -545,7 +547,7 @@ input:focus{
     margin-top: 1%;
     margin-bottom: 1%;
     text-decoration: underline;
-    text-decoration-color: rgba(217, 199, 0, 0.817);
+    text-decoration-color: rgb(0, 0, 0);
 }
 
 .container-formulario{
@@ -591,9 +593,9 @@ select{
     font-size: 16px;
 }
 .container-formulario fieldset {
-    background: rgba(255, 255, 255, 0.06);
-    border: 2.5px solid #bfa600;
-    box-shadow: 0 4px 24px 0 rgba(191,166,0,0.13), 0 1px 3px 0 rgba(0,0,0,0.10);
+    background: rgba(127, 127, 127, 0.429);
+    border:  solid #000000;
+    box-shadow: 0 4px 24px 0 rgba(119, 103, 0, 0.13), 0 1px 3px 0 rgba(0,0,0,0.10);
     padding: 2rem 1.5rem;
     width: 420px;
     border-radius: 18px;
@@ -605,8 +607,8 @@ select{
 }
 
 .container-formulario fieldset:hover {
-    border-color: #ffe066;
-    box-shadow: 0 8px 32px 0 rgba(255,213,0,0.15), 0 2px 6px 0 rgba(0,0,0,0.14);
+    border-color: #331f00;
+    box-shadow: 0 8px 32px 0 rgba(70, 53, 0, 0.87), 0 2px 6px 0 rgba(0,0,0,0.14);
 }
 
 .msg-form {
@@ -680,9 +682,9 @@ button:disabled {
 }
 
 .button-form:hover {
-    background-color: #33ba88;
+    background-color: #009a62;
     color: #1f1b1b;
-    transition: 0.2s;
+    transition: 0.4s;
     cursor: pointer;
 }
 .button-form:active {
@@ -749,9 +751,21 @@ select:disabled {
 /*      Página do Projeto      */
 /*******************************/
 
-#section-projeto p{
-    padding-bottom: 1%;
+#tituloProjeto{
+
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 4vh;
+    margin-top: 2%;
 }
+
+
+
 
 #container-projeto{
     display: flex;
@@ -759,57 +773,84 @@ select:disabled {
     margin-top: 100px;
     justify-content: center;
     padding-bottom: 20px;
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
+    #formularioProjeto {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-#formularioProjeto {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-input {
-    border: 0;
-    border-bottom: 2px solid rgba(0, 17, 255, 0.817);
-    border-radius: 5px 5px 0 0;
-    width: 90%;
-    padding: 5px;
-    margin-top: 10px;
-    background-color: #f5f5f593;
-}
-
-input[type="radio"] {
-    width: auto;
-}
-
-.genRadio {
-    margin: 2% 5px;
-}
-
-::placeholder {
-    color: #121212b4;
-    padding-left: 15px;
-}
-
-#container-projeto fieldset{
-    background-color: #35375181;
-    border: 4px solid rgba(0, 17, 255, 0.817);
-    padding: 2%;
-    width: 65%;
-
-    border-radius: 20px;
+.formulario-projeto-fieldset {
+    background: rgba(22, 34, 70, 0.70);
+    border: solid 2px #2563eb;
+    box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.18), 0 1px 3px 0 rgba(0,0,0,0.10);
+    padding: 2rem 1.5rem;
+    width: 420px;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 15px;
-    
+    gap: 18px;
+    transition: box-shadow 0.25s, border-color 0.25s;
+    backdrop-filter: blur(2px);
+}
+
+.formulario-projeto-fieldset:hover {
+    border-color: #1e293b;
+    box-shadow: 0 8px 32px 0 rgba(37, 99, 235, 0.32), 0 2px 6px 0 rgba(0,0,0,0.14);
+}
+
+#formularioProjeto label {
+    padding-left: 15px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #ffffff;
 }
 
 
-placeholder{
-    color: #121212;
+
+#tituloProjeto h1{
+    color: #ffffff;
+    text-shadow: 0 2px 8px #2563eb88;
+}
+
+#formularioProjeto input,
+#formularioProjeto select {
+    border: 0;
+    border: 2px solid #2563eb;
+    border-radius: 5px;
+    width: 400px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #e0e7ff;
+    font-size: 18px;
+    color: #000000;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#formularioProjeto input:focus,
+#formularioProjeto select:focus {
+    border: 2px solid #1e293b;
+    outline: none;
+    box-shadow: 0 0 0 4px #2563eb55;
+}
+
+#formularioProjeto input[type="radio"] {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 5px;
+    box-shadow: none;
+    accent-color: #000000;
+}
+
+
+
+
+
+#formularioProjeto ::placeholder {
+    color: #121212b4;
+    padding-left: 15px;
 }
 
 .button-projeto:disabled {
@@ -819,25 +860,30 @@ placeholder{
     border: 1px solid #999999;
 }
 
-.button-projeto{
+.button-projeto {
     width: 100px;
     height: 40px;
-    background-color: #b4b5b8;
-    color: #000000;
+    background-color: #707070;
+    color: #ffffff;
     border-radius: 5px;
-    border: solid 2px #000000;
+    border: solid 2px #1e293b;
     font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: 60px;
+    transition:  0.3s, 
 }
 
 .button-projeto:hover {
-    background-color: #00cbf4;
-    color: #1f1b1b;
-    transition: 0.2s;
+    background-color: #1e40af;
+    color: #e0e7ff;
+    transition: 0.4s;
     cursor: pointer;
 }
+
 .button-projeto:active {
-    background-color: #33a6ba;
-    color: #000000;
+    background-color: #3b82f6;
+    color: #ffffff;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -854,7 +900,7 @@ footer {
     color: #dcbb00f5;
     height: 23px;
     width: 100%;
-    color: #ffffff;
+    color: #000000;
     margin-top: auto;
     position: relative;
     justify-content: center;
@@ -872,6 +918,4 @@ footer {
     text-align: center;
 }
 
-.rodape-p {
-    font-size:medium;
-}
+

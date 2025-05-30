@@ -18,7 +18,7 @@
       transition: 0.8s;
   }
   
-  #tituloMenu h1 {
+  #tituloGeral h1 {
       font-size: 5vw;
     }
   .botoes {
@@ -52,6 +52,7 @@
     margin-left: 5px;
   }
 
+
   #menuCores {
     pointer-events: all;
     background-color: #007694;
@@ -66,6 +67,7 @@
 /******************************/
 /*           FOOTER           */
 /******************************/
+
 
   .rodape-p {
     font-size: 2.3vw;
