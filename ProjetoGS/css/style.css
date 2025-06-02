@@ -65,7 +65,7 @@ header{
 #titulo a{
     float: left;
     text-decoration: none;
-    font-size: 70px;
+    font-size: 3vh;
     color: #000000;
     transition: 0.8s;
     flex: 1;
@@ -889,16 +889,21 @@ select:disabled {
 
 .usertext{
     margin-top: 1%;
-    font-size: 30px;
+    font-size: 2.2vw;
     text-align: center;
     border: solid 3px #000000;
-    border-radius: 5px;
-    padding: 1%;
+    border-radius: 55px;
+    padding: 2vw 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
 
 .localizacaoText{
     width: 60%;
@@ -925,16 +930,12 @@ footer {
     height: 23px;
     width: 100%;
     color: #000000;
-    margin-top: auto;
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-#footer-format {
-    margin-top: auto;
-}
 
 .rodape{
     margin-top: 2px;

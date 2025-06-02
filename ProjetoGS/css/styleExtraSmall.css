@@ -30,7 +30,7 @@
     width: 65px;
   }
   #titulo a {
-    font-size: 37px;
+    font-size: 5vh;
     margin-left: 0;
     margin-top: 10px;
   }
@@ -122,7 +122,7 @@
   }
 
   #menuNav a {
-    font-size: 20px;
+    font-size: 4vh;
 
   }
 

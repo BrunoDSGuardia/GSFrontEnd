@@ -11,9 +11,9 @@
   }  
 
   #titulo a {
-      font-size: 60px;
+      font-size: 5vh;
       text-decoration: none;
-      font-size: 70px;
+      font-size: px;
       color: #000000;
       transition: 0.8s;
   }
