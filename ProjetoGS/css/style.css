@@ -28,6 +28,7 @@ body{
 }
 
 #container-geral{
+    flex: 1;
     width: 100%;
 }
 
@@ -218,7 +219,6 @@ main{
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
-    
     flex-direction: column;
 }
 
@@ -233,13 +233,11 @@ main{
     justify-content: center;
     text-align: center;
     font-size: 100%;
-    margin-top: 5%;
 }
 
 #tituloGeral h1 {
     color: #000000;
     text-shadow: 0 2px 8px #c35e0088;
-    margin-top: 50px;
     font-size: 4vw;
     margin-bottom: 30px;
 }
@@ -258,6 +256,7 @@ main{
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
+    margin-bottom: 5%;
     width: 100%;
     height: auto;
 
@@ -310,6 +309,7 @@ main{
     text-shadow: 0 2px 8px #350075;
     justify-content: center;
     margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 .integrantes{
@@ -933,7 +933,7 @@ footer {
 }
 
 #footer-format {
-    margin-top: 25%;
+    margin-top: auto;
 }
 
 .rodape{
