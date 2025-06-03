@@ -15,14 +15,16 @@ GSFrontEnd/
 │   │   ├── BrunoDias.png  
 │   │   ├── FundoApp.jpg  
 │   │   ├── github.png  
-│   │   ├── linkedin.png  
+│   │   ├── linkedin.png
+│   │   ├── maior.png  
+│   │   ├── menor.png   
 │   │   ├── RotaSeguraLogo.png  
 │   │   └── Vitor.jpg  
-│   └── JS/  
-│       ├── script.js  
-│       ├── scriptEndereco.js  
-│       ├── scriptFormulario.js  
-│       └── scriptProjeto.js                       
+│   ├── JS/  
+│   │   ├── script.js  
+│   │   ├── scriptEndereco.js  
+│   │   ├── scriptFormulario.js  
+│   │   └── scriptProjeto.js                       
 │   ├── index.html  
 │   ├── contato.html  
 │   ├── faq.html  

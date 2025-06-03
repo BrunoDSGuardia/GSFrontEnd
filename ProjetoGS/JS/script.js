@@ -9,13 +9,26 @@ document.addEventListener("DOMContentLoaded", function() {
     let botaoCinzaClaro = document.getElementById("botaoCor3");
     let botaoAzul = document.getElementById("botaoCor4");
     let botaoAzulClaro = document.getElementById("botaoCor5");
+    
+    function destacarBotao(botao) {
+        [botaoPreto, botaoCinza, botaoCinzaClaro, botaoAzul, botaoAzulClaro].forEach(b => {
+            if (b) {
+                b.classList.remove('botao-selecionado');
+                b.style.borderColor = ""; // Remove borda customizada
+            }
+        });
+        if (botao) {
+            botao.classList.add('botao-selecionado');
+            
+            botao.style.borderColor = "rgb(255, 255, 255)";
+        }
+    }
 
-
-    // Ativando Menu Hambúrguer
+    
     toggle.addEventListener('click', () => {
         menu.classList.toggle('active');
         menuCompleto.classList.toggle('active')
-        // Removendo caractere da nav
+        
         removeLi.forEach(li => {
             li.childNodes.forEach(node => {
                 if (node.nodeType === Node.TEXT_NODE) {
@@ -25,34 +38,89 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    const botaoDiminuir = document.getElementById("botaodiminui");
+    const elementosTexto = Array.from(document.querySelectorAll("body, body *"));
+    const tamanhoOriginal = new Map();
 
+    
+    elementosTexto.forEach(element => {
+        const computedStyle = window.getComputedStyle(element);
+        const fontSize = parseFloat(computedStyle.fontSize);
+        if (!isNaN(fontSize)) {
+            tamanhoOriginal.set(element, fontSize);
+        }
+    });
 
+    if (botaoDiminuir) {
+        botaoDiminuir.addEventListener("click", function() {
+            elementosTexto.forEach(element => {
+                const original = tamanhoOriginal.get(element);
+                if (!original) return;
+                const computedStyle = window.getComputedStyle(element);
+                let atual = parseFloat(computedStyle.fontSize);
+                let novo = atual * 0.98;
+                if (novo < original * 0.92) {
+                    novo = original * 0.92;
+                }
+                element.style.fontSize = novo + "px";
+            });
+        });
+    }
+
+    const botaoAumentar = document.getElementById("botaoaumento");
+    if (botaoAumentar) {
+        botaoAumentar.addEventListener("click", function() {
+            elementosTexto.forEach(element => {
+                const original = tamanhoOriginal.get(element);
+                if (!original) return;
+                const computedStyle = window.getComputedStyle(element);
+                let atual = parseFloat(computedStyle.fontSize);
+                let novo = atual + 2;
+                const maximo = original * 1.08;
+                if (novo > maximo) {
+                    novo = maximo;
+                }
+                element.style.fontSize = novo + "px";
+            });
+        });
+    }
 
     let corSalva = localStorage.getItem("corDeFundo");
+    let botaoSalvo = localStorage.getItem("botaoSelecionado");
     if (corSalva) {
         body.style.backgroundColor = corSalva;
     }
+    if (botaoSalvo) {
+        const botao = document.getElementById(botaoSalvo);
+        destacarBotao(botao);
+    }
+
     if (botaoPreto) {
         botaoPreto.addEventListener("click", function() {
-            let novaCorBody = "rgb(101, 141, 146)";
+            let novaCorBody = "rgb(101, 141, 146)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody); 
-
+            destacarBotao(botaoPreto);
+            localStorage.setItem("botaoSelecionado", "botaoCor");
         });
     }
     if (botaoCinza) {
         botaoCinza.addEventListener("click", function() {
-            let novaCorBody ="rgb(36, 66, 45)"; ;
+            let novaCorBody ="rgb(36, 66, 45)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
+            destacarBotao(botaoCinza);
+            localStorage.setItem("botaoSelecionado", "botaoCor2");
         });
     }
     
     if (botaoCinzaClaro) {
         botaoCinzaClaro.addEventListener("click", function() {
-            let novaCorBody ="rgb(114, 90, 69)" ;
+            let novaCorBody ="rgb(114, 90, 69) "; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
+            destacarBotao(botaoCinzaClaro);
+            localStorage.setItem("botaoSelecionado", "botaoCor3");
         });
     }
     if (botaoAzul) {
@@ -60,14 +128,18 @@ document.addEventListener("DOMContentLoaded", function() {
             let novaCorBody = "rgb(69, 51, 35)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
+            destacarBotao(botaoAzul);
+            localStorage.setItem("botaoSelecionado", "botaoCor4");
         });
     }
     
     if (botaoAzulClaro) {
         botaoAzulClaro.addEventListener("click", function() {
-            let novaCorBody = "rgb(31, 29, 29)";  
+            let novaCorBody = "rgb(31, 29, 29)"; 
             body.style.backgroundColor = novaCorBody;
             localStorage.setItem("corDeFundo", novaCorBody);
+            destacarBotao(botaoAzulClaro);
+            localStorage.setItem("botaoSelecionado", "botaoCor5");
         });
     }
 });
