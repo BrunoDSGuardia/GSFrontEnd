@@ -1,5 +1,37 @@
 # Objetivo
 
+# Estrutura de pastas
+GSFrontEnd/  
+├── ProjetoGS/                        
+│   ├── css/   
+│   │   ├── style.css  
+│   │   ├── styleExtraLarge.css  
+│   │   ├── styleExtraSmall.css  
+│   │   ├── styleLarge.css  
+│   │   ├── styleMedium.css  
+│   │   └── styleSmall.css  
+│   ├── img/  
+│   │   ├── Arthur.png  
+│   │   ├── BrunoDias.png  
+│   │   ├── FundoApp.jpg  
+│   │   ├── github.png  
+│   │   ├── linkedin.png  
+│   │   ├── RotaSeguraLogo.png  
+│   │   └── Vitor.jpg  
+│   └── JS/  
+│       ├── script.js  
+│       ├── scriptEndereco.js  
+│       ├── scriptFormulario.js  
+│       └── scriptProjeto.js                       
+│   ├── index.html  
+│   ├── contato.html  
+│   ├── faq.html  
+│   ├── integrantes.html  
+│   ├── localizacao.html  
+│   └── projeto.html  
+├── README.md  
+└── .gitattributes                 
+
 
 ## ✔️ Tecnologias utilizadas
 
