@@ -30,7 +30,7 @@
     }
     #titulo a {
       margin-top: 0;
-      font-size: 55px;
+      font-size: 5vh;
       margin-left: 0;
     }
     
@@ -47,7 +47,7 @@
       align-items: center;
       background-color: #0164b5;
       position: absolute;
-      top: 43vh;
+      top: 4vh;
       right: 0;
       opacity: 0;
       transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
@@ -263,7 +263,7 @@
       
   }
   .titulo_faq h1 {
-      font-size: 4vh;
+      font-size: 9vh;
       text-align: center;
   }
 
@@ -274,12 +274,7 @@
   }
   
 
-  .toggle {
-    width: 50%;
-    margin-top: 15px;
-    padding: 10px 15px;
-    font-size: 16px;
-  }
+
 
 
   /******************************/
