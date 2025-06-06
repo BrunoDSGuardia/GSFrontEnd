@@ -1,20 +1,11 @@
 @media (min-width: 600px){
   html, body {
-      min-height: 100vh;
       max-height: 100%;
       justify-content: space-between;
     }
   
-    #container-geral{
-      width: 100%;
-    }
-  
     header {
-      height: 70px;
-      justify-content: space-between;
-      align-items: center; 
-      flex-wrap: nowrap; 
-      padding: 0;
+      height: 85px;
   
     }
   
@@ -29,7 +20,6 @@
       width: 65px;
     }
     #titulo a {
-      margin-top: 0;
       font-size: 5vh;
       margin-left: 0;
     }

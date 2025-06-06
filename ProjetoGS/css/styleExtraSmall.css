@@ -1,67 +1,60 @@
 @media (max-width: 600px) {
-  html, body {
-    min-height: 100vh;
-  }
-
   #container-geral{
-    width: 100%;
     height: 100%;
   }
 
   header {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-
+    height: 65px;
   }
 
   #logo {
-    flex: 0;
-  }
-
-  #titulo {
-    flex: 0.6;
+    margin-left: 3%;
+    margin-right: 0;
   }
 
   #logo img {
-    margin-top: 0;
     width: 65px;
   }
+
   #titulo a {
     font-size: 5vh;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   
   .menu-toggle {
     display: block;
-    margin-bottom: 12px;
+    margin-right: 5%;
+    font-size: 7vh;
+    width: 50px;
+    height: 60px;
+  }
+  
+  header button{
+    margin-top: 2vh;
+    margin-left: 1.5vh;
+    border: solid 2px #ffd500;
   }
   
   #menuCores {
     pointer-events: none;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #547ea1;
+    background-color: #000;
     position: absolute;
     top: 39vh;
-    right: 0;
     opacity: 0;
-    transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
+    right: 0;
+    transition: opacity ease-in-out, opacity 0.1s ease-in-out;
     width: 30vh;
-    height: -1000px;
     z-index: 3;
-    flex: 0;
   }
   
   #menuCores.active {
     display: block;
     height: 8vh;
     border-radius: 10px;
-    right: 0;
     pointer-events: all;
     opacity: 1;
   }
@@ -76,21 +69,13 @@
   
   }
 
-  header button{
-    width: 4vh;
-    height: 4vh;
-    margin-top: 2vh;
-    margin-left: 1.5vh;
-  }
-
   #menuNav {
     pointer-events: none;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: absolute;
     min-width: 20%;
-    top: 12vh;
+    top: 10.8vh;
     right: 0;
     max-width: 30vh;
     height: -1000px;
@@ -99,31 +84,31 @@
   }
 
   #menuNav ul {
-    justify-content: center;
-    padding-top: 15px;
-    flex-wrap: wrap;
-    white-space: wrap;
-    max-width: 20%;
-    margin-left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
   }
 
   #menuNav li{
-    margin-bottom: 5px;
-    font-size: 20px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 17px;
   }
 
   #menuNav.active{
     display: block;
     right: 0;
-    height: 29vh;
+    height: 36vh;
     opacity: 1;
     pointer-events: all;
     z-index: 2;
   }
 
   #menuNav a {
-    font-size: 4vh;
-
+    font-size: 3vh;
   }
 
   

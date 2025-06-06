@@ -4,7 +4,6 @@
     margin: 0%;
     padding: 0%;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-
 }
 
 html, body{
@@ -36,11 +35,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; 
     background-color: #dcbb00f5;
     height: 85px;
     width: 100%;
-    min-height: 85px;
     padding: 0;
 }
 
@@ -59,7 +56,7 @@ header{
 #logo img:hover{
     filter:contrast(2);
     transition: 0.8s;
-
+    
 }
 
 #titulo a{
@@ -70,31 +67,27 @@ header{
     transition: 0.8s;
     flex: 1;
     flex-grow: 1;
-    margin-bottom: 10px;
     text-align: center;
-
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 #titulo a:hover{
     color: #2e004d;
     transition: 0.8s;
-
+    
 }
 
 .menu-toggle {
     display: none;
-    align-content: space-around;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    float: right;
-    margin-top: 7px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-right: 40px;
     font-size: 50px;
     cursor: pointer;
     
 }
-    
+
 
 header button{
     margin-top: 3vh;
@@ -111,12 +104,12 @@ header button:hover{
     
 }
 
-.menuCores{
+#menuCores{
     position: relative;
     z-index: 2;
     display: flex;
     flex: 0;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 #botaoCor{
@@ -224,7 +217,7 @@ main{
 
 
 #tituloGeral {
-
+    
     width: 100%;
     height: auto;
     display: flex;
@@ -259,8 +252,8 @@ main{
     margin-bottom: 5%;
     width: 100%;
     height: auto;
-
-
+    
+    
 }
 
 .botoes:hover{
@@ -268,8 +261,8 @@ main{
     background-color: #0e0027 ;
     color: #cf8300;
     scale: 1.2;
-
-
+    
+    
 }
 
 .botoes:active{
@@ -322,7 +315,7 @@ main{
     align-items: center;
     font-size: 20px;
     padding-bottom: 20px;
-
+    
     border-top: solid 5px #000000a2;
     border-bottom: solid 5px #000000a2;
 }
@@ -339,7 +332,7 @@ main{
 
 
 .integrantes img{
-
+    
     border: solid 5px #ca9013a2;
     display: flex;
     justify-content: center;
@@ -367,7 +360,7 @@ main{
 .integrantes a {
     height: 100%;
     background-color: #000000;
-
+    
 }
 
 #iconLinkedin{    
@@ -444,14 +437,14 @@ main{
 
 
 section {
-
+    
     height: 0;
     transition: height 0.5s ease-in-out;
-
+    
 }
 
 .linkFaq{
-
+    
     color: #e09d00;
 }
 
@@ -518,7 +511,7 @@ section {
     font-size: 4vh;
     color: #ffffff;
     margin-bottom: 1%;
-
+    
 }
 /******************************************/
 /*           PÁGINA DE CONTATO            */
@@ -526,14 +519,14 @@ section {
 
 
 .container-formulario-geral{
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-
+    
 }
 
 input:focus{
@@ -559,7 +552,7 @@ input:focus{
 .container-formulario label {
     padding-left: 15px;
     font-size: 25px;
-
+    
 }
 
 .container-formulario input {
@@ -656,7 +649,7 @@ textarea:focus {
 }​
 textarea::placeholder {
     color: #121212b4;
-
+    
 }
 
 
@@ -712,7 +705,7 @@ option {
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     transition: border-color 0.3s, box-shadow 0.3s;
     
-    }
+}
 
 select {
     background-color: #f5f5f593;
@@ -722,7 +715,7 @@ select {
     font-size: 18px;
     color: #222;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-
+    
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -752,7 +745,7 @@ select:disabled {
 /*******************************/
 
 #tituloProjeto{
-
+    
     width: 60%;
     height: auto;
     display: flex;
@@ -910,7 +903,7 @@ select:disabled {
     font-size: 30px;
     text-align: center;
     margin-top: 1%;
-
+    
     color: #ffffff;
 }
 
@@ -985,7 +978,7 @@ select:disabled {
 
 
 footer {
-
+    
     display: flex;
     background-color: #dcbb00f5;
     color: #dcbb00f5;
