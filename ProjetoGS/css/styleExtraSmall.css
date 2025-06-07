@@ -4,7 +4,7 @@
   }
 
   header {
-    height: 65px;
+    height: 80px;
   }
 
   #logo {
@@ -13,11 +13,11 @@
   }
 
   #logo img {
-    width: 65px;
+    width: 75px;
   }
 
   #titulo a {
-    font-size: 5vh;
+    font-size: 6vh;
     margin-left: 0;
     margin-top: auto;
     margin-bottom: auto;
@@ -43,18 +43,23 @@
     align-items: center;
     background-color: #000;
     position: absolute;
-    top: 39vh;
+    top: 41.5vh;
     opacity: 0;
     right: 0;
     transition: opacity ease-in-out, opacity 0.1s ease-in-out;
     width: 30vh;
     z-index: 3;
+    border:solid 2px #dcbb00f5;
+    border-top: 0px;
+
   }
   
   #menuCores.active {
     display: block;
     height: 8vh;
     border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
     pointer-events: all;
     opacity: 1;
   }
@@ -63,27 +68,35 @@
     width: 21px;
     height: 21px;
   }
-  
-  #botaoCor{
-    margin-left: 2vh;
-  
-  }
 
-  #menuNav {
-    pointer-events: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    min-width: 20%;
-    top: 10.8vh;
-    right: 0;
-    max-width: 30vh;
-    height: -1000px;
-    opacity: 0;
-    transition: height 0.4s ease-in-out, opacity 0.2s ease-in-out;
-  }
+/******************************/
+/*           NAVBAR           */
+/******************************/
 
-  #menuNav ul {
+#menuNav {
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 13vh;
+  right: 0;
+  max-width: 30vh;
+  height: -1000px;
+  opacity: 0;
+  transition: height 0.4s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+#menuNav.active{
+  display: block;
+  right: 0;
+  height: 36vh;
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
+  border: solid 2px #dcbb00f5;
+}
+
+#menuNav ul {
     margin-left: auto;
     margin-right: auto;
     min-width: 100%;
@@ -95,23 +108,12 @@
   #menuNav li{
     margin-top: 6px;
     margin-bottom: 6px;
-    font-size: 17px;
-  }
-
-  #menuNav.active{
-    display: block;
-    right: 0;
-    height: 36vh;
-    opacity: 1;
-    pointer-events: all;
-    z-index: 2;
   }
 
   #menuNav a {
     font-size: 3vh;
+    margin-left: 0;
   }
-
-  
   
   #inicio {
     flex-direction: column;
@@ -123,9 +125,19 @@
   }
   main{
     height: 100%;
+    justify-content: flex-start;
   }
   #tituloGeral h1 {
-    font-size: 6vw;
+    margin-top: 6vh;
+    font-size: 6vw; 
+  }
+  #tituloGeral p {
+    font-size: 3vw;
+    width: 80%;
+  }
+  #container-botoes{
+    height: auto;
+    margin: auto 0 auto 0;
     
   }
   .botoes {
@@ -133,11 +145,6 @@
     width: 80%;
     height: auto;
   }
-  #container-botoes{
-    height: auto;
-    
-  }
-  
   
   /*********************************************/
   /*           PÁGINA DE INTEGRANTES           */
@@ -145,25 +152,31 @@
   
   #titulointegrantes {
     font-size: 24px;
-    margin: 4%;
+    margin: 6% auto 6% auto;
   }
   
   .integrantes {
     width: 100%;
     flex-direction: column;
-    height: auto;
-    padding: 2%;
     padding-bottom: 20px;
+    justify-content: flex-start;
+    border-bottom: 0;
   }
   
   .integrante {
+    display: flex;
+    min-height: 30%;
     width: 85%;
     margin: 10px 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .integrantes img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
+    margin: 10px 0 10px 0;
   }
   .integrantes h2 {
     font-size: 30px;
@@ -171,8 +184,15 @@
   .integrantes p {
     font-size: 16px;
   }
+
+  .integrante-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
-  #iconLinkedin, #iconGithub {
+  #iconLinkedin, #iconGithub, 
+  #iconLinkedin:hover, #iconGithub:hover {
     width: 40px;
     height: 40px;
     margin: 5px;
@@ -270,9 +290,6 @@
   footer {
     margin-top: auto;
     z-index: 4;
-  }
-  #footer-format{
-    margin-top: 11%;
   }
   .rodape-p {
     font-size: 3.5vw;
