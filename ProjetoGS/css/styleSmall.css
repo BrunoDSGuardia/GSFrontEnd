@@ -4,30 +4,25 @@
       justify-content: space-between;
     }
   
-    header {
-      height: 85px;
-  
-    }
-  
-    #logo {
-      margin-left: 7%;
-      flex: 0;
+    #logo, #titulo {
+      margin-left: auto;
+      margin-right: auto;
     }
   
     #logo img {
-      margin-left: -10px;
       margin-top: 0;
-      width: 65px;
+      width: 80px;
     }
+
     #titulo a {
-      font-size: 5vh;
+      font-size: 6vh;
       margin-left: 0;
     }
     
     .menu-toggle {
       display: block;
-  margin-bottom: 12px;
-
+      margin-right: auto;
+      margin-left: auto;
     }
     
     #menuCores {
@@ -35,33 +30,31 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      background-color: #0164b5;
+      background-color: #000;
       position: absolute;
-      top: 4vh;
+      top: 42vh;
       right: 0;
       opacity: 0;
-      transition: right 0.4s ease-in-out, opacity 0.2s ease-in-out;
+      transition: opacity ease-in-out, opacity 0.1s ease-in-out;
       width: 35vh;
       min-width: 20%;
-      height: -1000px;
-      z-index: 3;
-      flex: 0;
-      display: flex;
-      /* gap: 1px; */
+      z-index: 4;
+      border:solid 2px #dcbb00f5;
+      border-top: 0px;
     }
     
     #menuCores.active {
       display: block;
       height: 8vh;
       border-radius: 10px;
-      right: 0;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
       pointer-events: all;
       opacity: 1;
     }
     
     #botaoCor{
       margin-left: 3.5vh;
-    
     }
   
     header button{
@@ -70,43 +63,53 @@
       margin-top: 2vh;
       margin-left: 1.5vh;
     }
-  
-    #menuNav {
-      pointer-events: none;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      min-width: 20%;
-      top: 14vh;
-      right: 0;
-      max-width: 35vh;
-      height: -1000px;
-      opacity: 0;
-      transition: height 0.4s ease-in-out, opacity 0.2s ease-in-out;
-    }
+
+
+/******************************/
+/*           NAVBAR           */
+/******************************/
+
+
+#menuNav {
+  pointer-events: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  min-width: 20%;
+  top: 14vh;
+  right: 0;
+  max-width: 35vh;
+  height: -1000px;
+  opacity: 0;
+  transition: height 0.4s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+  #menuNav.active{
+    display: flex;
+    right: 0;
+    height: 31vh;
+    opacity: 1;
+    pointer-events: all;
+    z-index: 3;
+    border:solid 2px #dcbb00f5;
+  }
   
     #menuNav ul {
       justify-content: center;
-      padding-top: 17px;
-      flex-wrap: wrap;
       white-space: wrap;
       max-width: 20%;
-      margin-left: 39%;
+      align-items: center;
+      flex-direction: column;
     }
-  
-    #menuNav.active{
-      display: block;
-      right: 0;
-      height: 31vh;
-      opacity: 1;
-      pointer-events: all;
-      z-index: 2;
+
+    #menuNav li{
+      margin-top: 3px;
+      margin-bottom: 3px;
     }
   
     #menuNav a {
       font-size: 22px;
-  
+      margin-left: 0;
     }
   
   /****************************************/
@@ -136,10 +139,6 @@
       width: 80%;
       height: auto;
     }
-    #container-botoes{
-      height: auto; 
-    }
-
     main {
       height: 100%;
     }
@@ -272,11 +271,7 @@
   /******************************/
 
   footer {
-      margin-top: 10%;
       z-index: 4;
-    }
-    .footer-format {
-      margin-top: 11%;
     }
     .rodape-p {
       font-size: 3vw;

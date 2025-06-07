@@ -16,12 +16,7 @@ html, body{
 
 body{
     box-sizing: border-box;
-    background-color: rgb(31, 29, 29);  
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    
+    background-color: rgb(31, 29, 29);     
 }
 
 #container-geral{
@@ -37,6 +32,20 @@ header{
     height: 85px;
     width: 100%;
     padding: 0;
+}
+
+header button{
+    margin-top: 3vh;
+    margin-left: 2vh;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 5px;
+    border: solid 3px #000000;
+    font-size: 20px;
+}
+
+header button:hover{
+    border-color: #ffd500;    
 }
 
 #logo{
@@ -86,22 +95,6 @@ header{
     
 }
 
-
-header button{
-    margin-top: 3vh;
-    margin-left: 2vh;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 5px;
-    border: solid 3px #000000;
-    font-size: 20px;
-}
-
-header button:hover{
-    border-color: #ffd500;
-    
-}
-
 #menuCores{
     position: relative;
     z-index: 2;
@@ -144,7 +137,6 @@ header button:hover{
     max-width: 100%;
     background-color: #000000;
     border-radius: 0 0 20px 20px;
-    
 }
 
 #menuNav ul{
@@ -244,8 +236,6 @@ main{
     margin-bottom: 5%;
     width: 100%;
     height: auto;
-    
-    
 }
 
 .botoes:hover{
@@ -416,31 +406,26 @@ main{
     padding-top: 41px;
     display: flex;
     align-items: center;
-    
+    font-size: 4vh;
+    color: #ffffff;
+    margin-bottom: 1%;
 }
 
 .titulo_faq {
-    
     padding-bottom: 3%;
     text-shadow: 0 2px 8px #ff660088;
 }
 
-
-
 section {
-    
     height: 0;
-    transition: height 0.5s ease-in-out;
-    
+    transition: height 0.5s ease-in-out;    
 }
 
 .linkFaq{
-    
     color: #e09d00;
 }
 
 .toggle {
-    
     width: 50%;
     cursor: pointer;
     font-weight: bold;
@@ -498,12 +483,7 @@ section {
     border-radius:  0 0 8px 8px;
 }
 
-#corpo_pagina_faq{
-    font-size: 4vh;
-    color: #ffffff;
-    margin-bottom: 1%;
-    
-}
+
 /******************************************/
 /*           PÁGINA DE CONTATO            */
 /*****************************************/
@@ -538,6 +518,25 @@ input:focus{
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+}
+
+.container-formulario fieldset {
+    background: rgba(127, 127, 127, 0.429);
+    border:  solid #000000;
+    box-shadow: 0 4px 24px 0 rgba(119, 103, 0, 0.13), 0 1px 3px 0 rgba(0,0,0,0.10);
+    padding: 2rem 1.5rem;
+    width: 420px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    transition: box-shadow 0.25s, border-color 0.25s;
+    backdrop-filter: blur(2px);
+}
+
+.container-formulario fieldset:hover {
+    border-color: #331f00;
+    box-shadow: 0 8px 32px  rgba(97, 73, 0, 0.87), 0 2px 6px 0 rgba(0,0,0,0.14);
 }
 
 .container-formulario label {
@@ -575,24 +574,6 @@ select{
     padding: 5px;
     background-color: #f5f5f593;
     font-size: 16px;
-}
-.container-formulario fieldset {
-    background: rgba(127, 127, 127, 0.429);
-    border:  solid #000000;
-    box-shadow: 0 4px 24px 0 rgba(119, 103, 0, 0.13), 0 1px 3px 0 rgba(0,0,0,0.10);
-    padding: 2rem 1.5rem;
-    width: 420px;
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    transition: box-shadow 0.25s, border-color 0.25s;
-    backdrop-filter: blur(2px);
-}
-
-.container-formulario fieldset:hover {
-    border-color: #331f00;
-    box-shadow: 0 8px 32px  rgba(97, 73, 0, 0.87), 0 2px 6px 0 rgba(0,0,0,0.14);
 }
 
 .msg-form {
@@ -734,6 +715,45 @@ select:disabled {
 /*******************************/
 /*      Página do Projeto      */
 /*******************************/
+
+#container-projeto fieldset {
+    background: rgba(22, 34, 70,    0.70);
+    border: solid 2px #2563eb;
+    box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.18), 0 1px 3px 0 rgba(0,0,0,0.10);
+    padding: 2rem 1.5rem;
+    width: 65%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;     
+    flex-wrap: wrap;         
+    justify-content: flex-start;
+    align-items: center;
+    gap: 18px;
+    transition: box-shadow 0.25s, border-color 0.25s;
+    backdrop-filter: blur(2px);
+    }
+
+    #container-projeto fieldset:hover {
+        border-color: #0b005b;
+        box-shadow: 0px 0px 20px 12px rgba(72, 188, 255, 0.393), 0 2px 6px 0 rgba(0,0,0,0.14);
+    }
+
+
+    #container-projeto input {
+        width: 70%;
+    }
+
+    #container-projeto fieldset > div {
+        flex: 1 1 300px;
+    }
+
+    #container-projeto input[type="radio"] {
+        width: auto;
+    }
+
+    .genRadio {
+        margin: 3% 5px;
+    }
 
 #tituloProjeto{
     
