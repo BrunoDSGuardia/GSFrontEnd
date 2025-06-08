@@ -1,28 +1,17 @@
 @media (min-width: 768px){
-  #logo img {
-    width: 75px;
-    transition: 0.8s;
+
+  header button {
+    margin-top: 0;
   }
-  #titulo {
-    flex: 1;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }  
 
   #titulo a {
-      font-size: 5vh;
-      text-decoration: none;
-      font-size: px;
-      color: #000000;
-      transition: 0.8s;
+      font-size: 7vh;
   }
   .titulo_faq {
     font-size: 5vw;
     padding-bottom: 3%;
     text-shadow: 0 2px 8px #00000088;
   }
-
 
   .botoes {
     font-size: 4vh;
@@ -32,6 +21,7 @@
     display: none;
   }
 
+  
   #menuNav, #menuNav.active {
     display: flex;
     position: static;
@@ -43,32 +33,91 @@
     align-items: center;
     min-width: 100%;
   }
-
+  
   #menuNav ul {
     flex-direction: row;
     margin: 0 auto;
     flex-wrap: nowrap;
     padding-top: 0;
   }
-
+  
   #menuNav ul li {
-    margin-left: 5px;
+    margin-left: 15px;
   }
-
-
+  
   #menuCores {
     pointer-events: all;
-    background-color: #007694;
-    display: flex;
     flex-direction: row;
+    position: static;
     opacity: 1;
     background-color: transparent;
-    margin-bottom: 15px;
-    top: 4vh;
+    margin: auto auto;
+    min-width: auto;
+  }
+  
+  #logo {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  #titulo {
+    display: flex;
+    flex: 2;
+    text-align: center;
+  }
+  
+  #menuCores {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  #botaoCor {
+    margin-left: 0;
   }
 
-/******************************/
-/*           FOOTER           */
+  #menu {
+    justify-content: space-evenly;
+  }
+
+  #tituloGeral{
+    margin-top: 0;
+  }
+
+
+  /*********************************************/
+  /*           PÁGINA DE INTEGRANTES           */
+  /*********************************************/
+
+  #titulointegrantes {
+    margin-top:40px;
+  }
+  
+  .integrantes img {
+    width: 220px;
+    height: 220px;
+  }
+  .integrante-info {
+    max-width: 190px;
+  }
+  .integrantes h2 {
+    font-size: 30px;
+  }
+  .integrantes p {
+    font-size: 20px;
+  }
+
+
+/*************************************/
+/*           PÁGINA DE FAQ           */
+/*************************************/
+
+  .titulo_faq{
+    text-shadow: 0 2px 8px #ff660088;
+  }
+
+  /******************************/
+  /*           FOOTER           */
 /******************************/
 
 

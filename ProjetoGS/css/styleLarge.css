@@ -59,11 +59,8 @@
     }
 }
 
-
-
     #menu{
         width: 100%;
-
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -77,7 +74,7 @@
         justify-content: center;
         text-align: center;
         font-size: 100%;
-        margin-top: 10%;
+        margin-top: 13%;
     }
 
     #info h1 {
@@ -85,8 +82,11 @@
     }
 
     #tituloGeral h1{
-        font-size: 4vw;
+        font-size: 5vw;
+    }
 
+    #tituloGeral p {
+        font-size: 2.5vw;
     }
 
     #container-botoes{
@@ -114,15 +114,11 @@
 
     .botoes:hover{
         transition: 0.3s;
-
         scale: 1.2;
-
-
     }
 
     .botoes:active{
         transition: 0.3s;
-
         scale: 0.95;
     }
 
@@ -131,7 +127,6 @@
         transition: 0.3s;
         width: 60%;
         border-radius: 15px;
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -146,70 +141,49 @@
     /*           PÁGINA DE INTEGRANTES           */
     /*********************************************/
     #titulointegrantes {
-        font-size: 24px;
         margin: 1%;
-        margin-top: 2%;
+        margin-top: 4%;
     }
 
     .integrantes {
-        justify-content: flex-start; /* Começa à esquerda */
         align-items: flex-start;
         position: relative;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .integrante {
-        display: flex;
-        align-items: flex-start; /* Alinha ao topo/esquerda */
-        max-width: 38%;
-        margin: 0px 0 20px 35vw;
+        width: 25%;
+        min-height: 450px;
+        margin: 0 10px;
         background-color: rgb(16, 16, 16);
         border-radius: 10px;
         border: solid 2px #ca9013a2;
         transition: 0.3s;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .integrante:hover {
-        
         transition: 0.3s;
         scale: 1.05;
         box-shadow: 0 0 35px #5e017a;
         transition: 0.3s;
         scale: 1.05;
     }
-
-    .integrante:nth-child(2) {
-        margin: 0px 0 20px 25vw;
-        display: flex;
-        flex-direction: row-reverse; /* Inverte a ordem dos elementos */
-    }
-
-    .integrantes img:nth-child(1),
-    .integrantes img:nth-child(3) {
-        border: solid 5px #000000;
-        margin-top: 10px;
-        width: 12vw;
-        height: 90%;
-        border-radius: 100%;
-        margin-left: 20px;
-    }
         .integrantes img{
-        margin-top: 10px;
-        width:  35%;
-        height: 90%;
+        width:  180px;
+        height: auto;
         border-radius: 100%;
-        margin-right: 20px;
     }
-
-
 
     .integrantes h2 {
         font-weight: 100;
         margin-top: 10px;
-        font-size: 6vh;
+        font-size: 5vh;
         color: #ffffff;
         text-align: left;
         margin-bottom: 8px;
-
         align-self: flex-start;
     }
     .integrantes p {
@@ -218,7 +192,6 @@
         color: #ffffff;
         text-align: center;
         margin-bottom: 8px;
-
         align-self: flex-start;;
     }
 
@@ -228,21 +201,24 @@
     /*********************************************/
 
 
-    #container-projeto fieldset {
-    background: rgba(22, 34, 70,    0.70);
-    border: solid 2px #2563eb;
-    box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.18), 0 1px 3px 0 rgba(0,0,0,0.10);
+    .container-formulario {
+        max-width:85%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container-formulario fieldset {
     padding: 2rem 1.5rem;
-    width: 65%;
+    width: auto;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;     
-    flex-wrap: wrap;         
-    justify-content: flex-start;
-    align-items: center;
     gap: 18px;
     transition: box-shadow 0.25s, border-color 0.25s;
     backdrop-filter: blur(2px);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     }
 
     #container-projeto fieldset:hover {
@@ -250,13 +226,33 @@
         box-shadow: 0px 0px 20px 12px rgba(72, 188, 255, 0.393), 0 2px 6px 0 rgba(0,0,0,0.14);
     }
 
+    .nome-form, .email-form {
+        width: 48%;
+    }
+
+    .tipo-form {
+        width: 48%;
+    }
+
+    select#tipo {
+        font-size: 16px;
+    }
+
+    .assunto-form{
+        width: 48%;
+    }
+
+    .msg-form {
+        width: 80%;
+    }
+
+    .button-form {
+        margin-top: 175px;
+        width: 140px;
+    }
 
     #container-projeto input {
         width: 70%;
-    }
-
-    #container-projeto fieldset > div {
-        flex: 1 1 300px;
     }
 
     #container-projeto input[type="radio"] {
@@ -267,13 +263,100 @@
         margin: 3% 5px;
     }
 
+
+/*************************************/
+/*           PÁGINA DE FAQ           */
+/*************************************/
+
+
+#corpo_pagina_faq{
+    width: 100%;
+    min-height: 553px;
+    padding-top: 41px;
+    display: flex;
+    align-items: center;
+    font-size: 4vh;
+    color: #ffffff;
+    margin-bottom: 1%;
+}
+
+.titulo_faq {
+    padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 24px;
+    text-shadow: 0 2px 8px #ff660088;
+}
+
+section {
+    height: 0;
+    transition: height 0.5s ease-in-out;    
+}
+
+.linkFaq{
+    color: #e09d00;
+}
+
+.toggle {
+    width: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #000000, #222222, #313131,#222222, #000000);
+    border: solid 2px #ff9900;
+    color: #ffffff;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    transition:0.5s;
+    width: 60%;
+    display: block;
+}
+
+.left{
+    margin-left: 32%;
+    margin-right: auto;
+}
+
+.right{
+    margin-left: 3%;
+    margin-right: auto;
+}
+
+.toggle:hover {
+    background: linear-gradient(135deg, #000000, #343434, rgb(74, 74, 74),#343434, #000000);
+    color: #ff9900;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.toggle:active {
+    transform: scale(0.1);
+    background: linear-gradient(135deg, #846b4f, #6c553c, #4b3d2d,#6c553c, #846b4f);
+    color: #000000;
+    transform: scale(0.99);
+}
+
+.section {
+    max-height: 0;
+    opacity: 0;
+    text-align: center;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    padding: 15px;
+    background: rgb(43, 43, 43);
+    border-bottom: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 61%;
+    border-left: solid 2px #a54800;
+    border-right: solid 2px #a54800;
+    border-bottom: solid 2px #a54800;
+    margin-bottom: 1%;
+    display: block;
+    border-radius:  0 0 8px 8px;
+}
+
     /******************************/
     /*           FOOTER           */
     /******************************/
-
-    footer {
-        margin-top: 6%;    
-    }
 
     #footer-format {
         margin-top: auto;

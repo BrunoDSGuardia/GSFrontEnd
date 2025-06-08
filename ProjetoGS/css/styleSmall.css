@@ -39,8 +39,6 @@
       width: 35vh;
       min-width: 20%;
       z-index: 4;
-      border:solid 2px #dcbb00f5;
-      border-top: 0px;
     }
     
     #menuCores.active {
@@ -51,6 +49,8 @@
       border-top-right-radius: 0px;
       pointer-events: all;
       opacity: 1;
+      border:solid 2px #dcbb00f5;
+      border-top: 0px;
     }
     
     #botaoCor{
@@ -62,6 +62,7 @@
       height: 4vh;
       margin-top: 2vh;
       margin-left: 1.5vh;
+      border: solid 2px #ffd500;
     }
 
 
@@ -141,6 +142,7 @@
     }
     main {
       height: 100%;
+      justify-content: space-between;
     }
 
 
@@ -150,42 +152,62 @@
 
 #titulointegrantes {
   font-size: 24px;
-  margin: 4%;
-  margin-top: 6%;
+  margin: 8% auto 0 auto;
 }
 
 .integrantes {
-  width: 10;
-
   flex-direction: column;
   height: auto;
-  padding: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .integrante {
-  width: 78%;
-  margin: 10px 15px;
+  display: flex;
+  min-height: 30%;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.integrante-info {
+  display: flex;
+  max-width: 156px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.integrante-info-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .integrantes img {
-  width: 230px;
-  height: 230px;
+  width: 180px;
+  height: 180px;
+  margin: 10px 0 10px 0;
+
 }
 .integrantes h2 {
-  font-size: 40px;
+  font-size: 25px;
 }
 .integrantes p {
-  font-size: 24px;
+  font-size: 18px;
 }
 
-#iconLinkedin, #iconGithub {
+#iconLinkedin, #iconGithub, 
+#iconLinkedin:hover, #iconGithub:hover  {
   width: 60px;
   height: 60px;
-  margin: 5px 0 5px auto;
+  margin: 10px 0;
   }
 
   #iconLinkedin {
-    margin-left: 40px;
     margin-right: 10px;
   }
   
@@ -198,12 +220,14 @@
   .container-formulario-geral {
       width: 100%;
       height: auto;
-      
   }
+  input:focus, select:focus, .msg-form textarea:focus{
+    box-shadow: 0 0 0 2px #8200add3;
+}
   .tituloContato {
       font-size: 32px;
-      margin-top: 30px;
-      margin-bottom: 35px;
+      margin-top: 40px;
+      margin-bottom: 50px;
       text-align: center;
   }
   .container-formulario {
@@ -212,11 +236,15 @@
       width: 95%;
       flex-direction: column;
       align-items: center;
+      padding-bottom: 0;
     }
     .container-formulario fieldset {
         width: 90%;
-        padding: 10px;
+        padding: 10px 10px 10px 0;
         border-width: 3px;
+        border-top-left-radius: 0;
+        border:  solid #331f00;
+
     }
   .container-formulario label {
       font-size: 18px;
@@ -249,20 +277,47 @@
       flex-direction: column;
       align-items: center;
       min-height: auto;
-      
   }
   .titulo_faq h1 {
-      font-size: 9vh;
+      font-size: 6vh;
       text-align: center;
   }
 
   .section {
       width: 50%;
-      margin-left: px auto;
       padding: 15px;
   }
   
+  .left, .right {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+
+/*******************************/
+/*      PÁGINA DO PROJETO      */
+/*******************************/
+
+
+#tituloProjeto {
+  width: 80%;
+  margin-top: 50px;
+  h1 {
+  font-size: 6vh;
+  margin-bottom: 25px;
+  }
+  p {
+    font-size: 3vh;
+  }
+}
+
+#container-projeto{
+  margin: 20px auto 0 auto
+  }
+
+  #container-projeto fieldset {
+    width: 75%;
+  }
 
 
 
