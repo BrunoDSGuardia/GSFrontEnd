@@ -24,7 +24,7 @@ Essa funcionalidade garante que, além de se proteger, o usuário possa também 
 GSFrontEnd/  
 ├── ProjetoGS/                        
 │   ├── css/    
-│   |   ├── style.css  
+│   │   ├── style.css  
 │   │   ├── styleExtraLarge.css  
 │   │   ├── styleExtraSmall.css  
 │   │   ├── styleLarge.css  
@@ -33,7 +33,7 @@ GSFrontEnd/
 │   ├── img/  
 │   │   ├── Arthur.png  
 │   │   ├── BrunoDias.png  
-│   |   ├── FundoApp.jpg  
+│   │   ├── FundoApp.jpg  
 │   │   ├── github.png  
 │   │   ├── linkedin.png  
 │   │   ├── maior.png  
