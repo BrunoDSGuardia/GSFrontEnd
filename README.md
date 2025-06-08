@@ -66,9 +66,9 @@ GSFrontEnd/
 
 | Nome                      | GitHub                                                              | LinkedIn | Role           |
 |---------------------------|---------------------------------------------------------------------|----------|----------------|
-| Arhtur dos Santos Cabral    |  [ArthurCPV](https://github.com/ArthurCPV)                                                                     |    [Arthur LinkedIn](https://www.linkedin.com/in/arthur-cabral2101/)      | PLACEHOLDER    |
-| Bruno Dias Desguardia           | [BrunoDSGuardia](https://github.com/BrunoDSGuardia)                             |    [Bruno LinkedIn](https://www.linkedin.com/in/bruno-dias-de-souza-guardia-b0a668302/)      | PLACEHOLDER    |
-| Vitor Fria Dalmagro                   | [VitorDalmagro](https://github.com/VitorDalmagro)                                                                     |  [Vitor LinkedIn](https://www.linkedin.com/in/vitor-dalmagro-b75722366/)        | PLACEHOLDER    |
+| Arhtur dos Santos Cabral    |  [ArthurCPV](https://github.com/ArthurCPV)                                                                     |    [Arthur LinkedIn](https://www.linkedin.com/in/arthur-cabral2101/)      | Desenvolvedor    |
+| Bruno Dias De Souza guardia           | [BrunoDSGuardia](https://github.com/BrunoDSGuardia)                             |    [Bruno LinkedIn](https://www.linkedin.com/in/bruno-dias-de-souza-guardia-b0a668302/)  | Desenvolvedor    |
+| Vitor Fria Dalmagro                   | [VitorDalmagro](https://github.com/VitorDalmagro)                                                                     |  [Vitor LinkedIn](https://www.linkedin.com/in/vitor-dalmagro-b75722366/)        | Desenvolvedor    |
 
 
 ## 📁 Acesso ao projeto
